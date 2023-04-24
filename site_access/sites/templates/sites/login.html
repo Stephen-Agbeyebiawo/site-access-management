@@ -16,7 +16,7 @@
         {% if message %}
             <div class="message">{{ message }}</div>
         {% endif %}
-        <form id="form1" action="{% url 'login' %}" method="post">
+        <form class="form1" action="{% url 'login' %}" method="post">
             {% csrf_token %}
             <div class="txt_field">
                 <input id="username_input" type="username" name="username" required>
