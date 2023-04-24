@@ -14,15 +14,19 @@
     <div class="center">
         <h1>Login</h1>
         {% if message %}
-            <div id="message">{{ message }}</div>
+            <div class="message">{{ message }}</div>
         {% endif %}
         <form id="form1" action="{% url 'login' %}" method="post">
             {% csrf_token %}
             <div class="txt_field">
-                <input id="username_input" type="username" name="username" placeholder="Username" required>
+                <input id="username_input" type="username" name="username" required>
+            <span></span>
+            <label for="username">Username</label>
             </div>
             <div class="txt_field">
-                <input id="password_input" type="password" name="password" placeholder="Password" required>
+                <input id="password_input" type="password" name="password" required>
+            <span></span>
+            <label for="password">Password</label>
             </div>
             <div class="pass">Trouble Logging In?</div>
                 <input id="submit_btn" type="submit" value="Submit">
