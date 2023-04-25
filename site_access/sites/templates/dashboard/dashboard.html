@@ -49,7 +49,7 @@
             </ul>
 
             <ul class="logout-mode">
-                <li><a href="#">
+                <li><a href="{% url 'logout' %}">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -80,12 +80,18 @@
         <div class="dash-content">
             <div class="overview">
                 <div class="title">
-                    
+                    <h1>Dashboard</h1>
                 </div>
+                    <div class="container">
+                        <div class="cont-content">
+                            <div class="item item1">New Request</div>
+                            <div class="item item2">View Requests</div>
+                            <div class="item item3">Site Collocation</div>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
-<a href="{% url 'logout' %}"><button>Logout</button></a>
     <script src="{% static 'dashboard/script.js' %}"></script>
 
 </body>
